@@ -40,7 +40,6 @@ export default function Contact() {
                         </Grid>
                         <Grid xs={12} item>
                             <TextField
-                                required
                                 type="number"
                                 label="Phone number"
                                 placeholder='Enter phone number'
