@@ -7,6 +7,7 @@ import DrawerAppBar from './components/Header/Header';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
 import Home from './components/Home/Home';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
                 <Route path='/Contact' element={<Contact/>}/>
                  {/* <Route path="/" element={<Navigate replace to={Paths.HOME} />} /> */}
             </Routes>
+            <Footer/>
         </div>
     );
 }
