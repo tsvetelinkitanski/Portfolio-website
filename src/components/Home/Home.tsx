@@ -1,8 +1,10 @@
 import React from "react";
 import "./Home.css";
 import { Button } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+  const navigate = useNavigate();
   return (
     <>
       <div className="title-wrapper">
@@ -14,6 +16,7 @@ export default function Home() {
         sx={{ marginLeft: 10, marginTop: 5 }}
         variant="outlined"
         size="large"
+        onClick={()=>navigate("/Contact")}
       >
         Get in touch
       </Button>
