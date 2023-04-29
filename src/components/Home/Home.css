@@ -1,0 +1,12 @@
+.title-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    align-items: center;
+}
+
+.name {
+    font-size: 20px;
+    color:#1976D2
+}
