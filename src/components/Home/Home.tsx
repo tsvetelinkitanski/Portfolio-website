@@ -2,6 +2,9 @@ import React from "react";
 import "./Home.css";
 import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import Headline from "./Headline/Headline";
+import Projects from "../Projects/Projects"
+import Contact from "../Contact/Contact";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -10,7 +13,7 @@ export default function Home() {
       <div className="title-wrapper">
         <div>Hi there👋, I'm</div>
         <div className="name">Tsvetelin Kitanski</div>
-        <p className="description">I try to make awesome websites</p>
+        <p className="description">Innovative Web Solutions</p>
       </div>
       <Button
         sx={{ marginLeft: 10, marginTop: 5 }}
@@ -20,6 +23,14 @@ export default function Home() {
       >
         Get in touch
       </Button>
+
+      <Headline name = "Projects"/> 
+
+      <Projects/>
+
+      <Headline name = "Contacts"/> 
+
+    <Contact/>
     </>
   );
 }
