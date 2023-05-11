@@ -13,7 +13,7 @@ export default function Home() {
       <div className="title-wrapper">
         <div>Hi there👋, I'm</div>
         <div className="name">Tsvetelin Kitanski</div>
-        <p className="description">Innovative Web Solutions</p>
+        <p className="description">Transforming ideas into functional, elegant solutions - let's collaborate! </p>
       </div>
       <Button
         sx={{ marginLeft: 10, marginTop: 5 }}
