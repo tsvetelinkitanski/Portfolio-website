@@ -72,30 +72,30 @@ export default function DrawerAppBar(props: Props) {
             <MenuIcon />
           </IconButton>
           <Typography
-          onClick = {() => {
-            scroll.scrollToTop(); 
-        }}
+            onClick={() => {
+              scroll.scrollToTop();
+            }}
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: "none", sm: "block", flex:"flex" }, cursor: "pointer" }}
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", sm: "block", flex: "flex" },
+              cursor: "pointer",
+            }}
           >
             Tsetso's portfolio
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
-              <Button
-                key={item}
-                sx={{ color: "#fff"}}
-                id={item}
-                >
+              <Button key={item} sx={{ color: "#fff" }} id={item}>
                 <Link
-                activeClass="active"
+                  activeClass="active"
                   to={item}
                   spy={true}
                   smooth={true}
                   offset={200}
                   duration={500}
-                  >
+                >
                   {item}
                 </Link>
               </Button>
