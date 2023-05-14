@@ -29,7 +29,6 @@ const navItems = ["About", "Experience", "Projects", "Contact"];
 
 export default function DrawerAppBar(props: Props) {
   const { window } = props;
-  const navigate = useNavigate();
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
@@ -86,10 +85,26 @@ export default function DrawerAppBar(props: Props) {
             Tsetso's portfolio
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            {navItems.map((item) => (
+            {navItems.map((item) => {
+              const lowerCaseItem = item.toLowerCase(); // convert item to lowercase for the to value
+              return (
+                <Button key={item} sx={{ color: "#fff" }} id={item}>
+                  <Link
+                    to={lowerCaseItem}
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    {item}
+                  </Link>
+                </Button>
+              );
+            })}
+
+            {/* {navItems.map((item) => (
               <Button key={item} sx={{ color: "#fff" }} id={item}>
                 <Link
-                  activeClass="active"
                   to={item}
                   spy={true}
                   smooth={true}
@@ -99,7 +114,7 @@ export default function DrawerAppBar(props: Props) {
                   {item}
                 </Link>
               </Button>
-            ))}
+            ))} */}
           </Box>
         </Toolbar>
       </AppBar>
