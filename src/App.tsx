@@ -18,8 +18,6 @@ function App() {
             <DrawerAppBar/>
            <Routes>
                 <Route path='/' element={<Home/>}/>
-                <Route path='/Projects' element={<Projects/>}/>
-                <Route path='/Contact' element={<Contact/>}/>
                  {/* <Route path="/" element={<Navigate replace to={Paths.HOME} />} /> */}
             </Routes>
             <Footer/>

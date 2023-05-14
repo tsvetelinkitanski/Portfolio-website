@@ -1,5 +1,6 @@
 import * as React from "react";
 import { useNavigate } from "react-router-dom";
+import { Link, animateScroll as scroll } from "react-scroll";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -71,21 +72,32 @@ export default function DrawerAppBar(props: Props) {
             <MenuIcon />
           </IconButton>
           <Typography
-            onClick={() => navigate("/")}
+          onClick = {() => {
+            scroll.scrollToTop(); 
+        }}
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
+            sx={{ flexGrow: 1, display: { xs: "none", sm: "block", flex:"flex" }, cursor: "pointer" }}
           >
             Tsetso's portfolio
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
               <Button
-                onClick={() => navigate(item)}
                 key={item}
-                sx={{ color: "#fff" }}
-              >
-                {item}
+                sx={{ color: "#fff"}}
+                id={item}
+                >
+                <Link
+                activeClass="active"
+                  to={item}
+                  spy={true}
+                  smooth={true}
+                  offset={200}
+                  duration={500}
+                  >
+                  {item}
+                </Link>
               </Button>
             ))}
           </Box>
