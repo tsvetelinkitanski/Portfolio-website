@@ -1,5 +1,4 @@
 import * as React from "react";
-import { useNavigate } from "react-router-dom";
 import { Link, animateScroll as scroll } from "react-scroll";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -93,7 +92,7 @@ export default function DrawerAppBar(props: Props) {
                     to={lowerCaseItem}
                     spy={true}
                     smooth={true}
-                    offset={-70}
+                    offset={-150}
                     duration={500}
                   >
                     {item}

@@ -21,22 +21,26 @@ export default function Home() {
       </div>
       <Button
         onClick={() => scroll.scrollToBottom()}
-        sx={{ marginLeft: 10, marginTop: 5 }}
+        sx={{ marginLeft: 10, marginTop: 5, marginBottom: "50px" }}
         variant="outlined"
         size="large"
       >
         Get in touch
       </Button>
 
+      <Headline name = "About"/> 
+
       <About/>
 
-      {/* <Headline name = "Projects"/>  */}
+      <Headline name = "Experience"/> 
+
       <Experience/>
-      {/* <Headline name = "Projects"/>  */}
+      
+      <Headline name = "Projects"/> 
 
       <Projects />
 
-      {/* <Headline name = "Contacts"/>  */}
+      <Headline name = "Contacts"/> 
 
       <Contact />
     </>

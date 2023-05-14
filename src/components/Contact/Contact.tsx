@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Contact() {
     return (
-        <Card  style={{ maxWidth: 450, margin: "0 auto", padding: "20px 5px" }} id="contact">
+        <Card  style={{ maxWidth: 850, margin: "0 auto", padding: "20px 5px" }} id="contact">
             <CardContent>
                 <Typography gutterBottom variant="h4">Contact Me</Typography>
                 <Typography gutterBottom color="textSecondary" variant="body2" component="p">Fill up the form and I will get back to you within 24 hours.</Typography>
