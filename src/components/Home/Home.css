@@ -1,3 +1,7 @@
+.content-wrapper {
+    margin: 70px;
+}
+
 .title-wrapper {
     display: flex;
     flex-direction: column;
@@ -8,7 +12,8 @@
 
 .name {
     font-size: 100px;
-    color:#1976D2
+    color: #10637D;
+
 }
 
 .description {

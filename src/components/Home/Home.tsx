@@ -10,7 +10,7 @@ import Experience from "../Experience/Experience";
 
 export default function Home() {
   return (
-    <>
+    <div className="content-wrapper">
       <div className="title-wrapper">
         <div>Hi there👋, I'm</div>
         <div className="name">Tsvetelin Kitanski</div>
@@ -20,12 +20,12 @@ export default function Home() {
         </p>
       </div>
       <Button
-        onClick={() => scroll.scrollToBottom()}
+        // onClick={() => scroll.scrollToBottom()}
         sx={{ marginLeft: 10, marginTop: 5, marginBottom: "50px" }}
         variant="outlined"
         size="large"
       >
-        Get in touch
+        Download Resume
       </Button>
 
       <Headline name = "About"/> 
@@ -43,6 +43,6 @@ export default function Home() {
       <Headline name = "Contacts"/> 
 
       <Contact />
-    </>
+    </div>
   );
 }
