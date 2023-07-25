@@ -10,5 +10,6 @@
 .picture {
     height: 100px;
     width: 200px;
-    border: solid red;
+    border-radius: 50px;
+    object-fit: cover;
 }

@@ -3,9 +3,11 @@ import "./About.css";
 
 
 export default function About() {
+
+  const img = require ('../../images/profilepicture.jpg').default;
   return (
     <div id="about">
-      <img className="picture" src={require('../../images/profilepicture.jpg')} alt="Profile picture" />
+      <img className="picture" src={img} alt="Profile picture" />
 
       <div>
         Hi there, I'm Tsvetelin Kitanski, a young intern web developer with a
