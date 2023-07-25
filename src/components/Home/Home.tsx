@@ -11,36 +11,45 @@ import Experience from "../Experience/Experience";
 export default function Home() {
   return (
     <div className="content-wrapper">
-      <div className="title-wrapper">
-        <div>Hi there👋, I'm</div>
-        <div className="name">Tsvetelin Kitanski</div>
-        <p className="description">
-          Transforming ideas into functional, elegant solutions - let's
-          collaborate!{" "}
-        </p>
+      <div className="title-and-picture-wrapper">
+        <div className="picture-wrapper">
+          <img
+            className="picture"
+            src={require("../../images/profilepicture.jpg").default}
+            alt="Profile picture"
+          />
+        </div>
+        <div className="title-wrapper">
+          <div>Hi there👋, I'm</div>
+          <div className="name">Tsvetelin Kitanski</div>
+          <p className="description">
+            Transforming ideas into functional, elegant solutions - let's
+            collaborate!{" "}
+          </p>
+          <Button
+            // onClick={() => scroll.scrollToBottom()}
+            sx={{ marginLeft: 0, marginTop: 5, marginBottom: "50px", background: "#10F0FC", color: "#1C2025" }}
+            variant="outlined"
+            size="large"
+          >
+            Download Resume
+          </Button>
+        </div>
       </div>
-      <Button
-        // onClick={() => scroll.scrollToBottom()}
-        sx={{ marginLeft: 10, marginTop: 5, marginBottom: "50px" }}
-        variant="outlined"
-        size="large"
-      >
-        Download Resume
-      </Button>
 
-      <Headline name = "About"/> 
+      <Headline name="About" />
 
-      <About/>
+      <About />
 
-      <Headline name = "Experience"/> 
+      <Headline name="Experience" />
 
-      <Experience/>
-      
-      <Headline name = "Projects"/> 
+      <Experience />
+
+      <Headline name="Projects" />
 
       <Projects />
 
-      <Headline name = "Contacts"/> 
+      <Headline name="Contacts" />
 
       <Contact />
     </div>

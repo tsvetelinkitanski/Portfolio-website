@@ -3,6 +3,6 @@ import React from 'react'
 
 export default function Headline({name}) {
   return (
-    <Typography sx={{paddingBottom: "10px", paddingLeft: "auto", paddingTop: "30px", color: "#10637D"}} variant='h5'>{name}</Typography>
+    <Typography sx={{paddingBottom: "10px", paddingLeft: "auto", paddingTop: "30px", color: "#F2F2F2"}} variant='h5'>{name}</Typography>
     )
 }

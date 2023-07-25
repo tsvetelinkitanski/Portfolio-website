@@ -4,12 +4,6 @@
 
 #about {
     display: flex;
+    color: #F2F2F2;
     /* max-width: 800px */
-}
-
-.picture {
-    height: 100px;
-    width: 200px;
-    border-radius: 50px;
-    object-fit: cover;
 }

@@ -87,7 +87,7 @@ export default function DrawerAppBar(props: Props) {
             {navItems.map((item) => {
               const lowerCaseItem = item.toLowerCase(); // convert item to lowercase for the to value
               return (
-                <Button key={item} sx={{ color: "#fff" }} id={item}>
+                <Button key={item} sx={{ color: "#F2F2F2" }} id={item}>
                   <Link
                     to={lowerCaseItem}
                     spy={true}
