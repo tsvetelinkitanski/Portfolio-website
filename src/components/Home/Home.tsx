@@ -20,7 +20,6 @@ export default function Home() {
           />
         </div>
         <div className="title-wrapper">
-          <div>Hi there👋, I'm</div>
           <div className="name">Tsvetelin Kitanski</div>
           <p className="description">
             Transforming ideas into functional, elegant solutions - let's
@@ -28,7 +27,14 @@ export default function Home() {
           </p>
           <Button
             // onClick={() => scroll.scrollToBottom()}
-            sx={{ marginLeft: 0, marginTop: 5, marginBottom: "50px", background: "#10F0FC", color: "#1C2025" }}
+            sx={{
+              marginLeft: 0,
+              marginTop: 5,
+              marginBottom: "50px",
+              background: "#10F0FC",
+              color: "#1C2025",
+              "&:hover": {color: "#10F0FC", backgroundColor: "#1C2025"}
+            }}
             variant="outlined"
             size="large"
           >
